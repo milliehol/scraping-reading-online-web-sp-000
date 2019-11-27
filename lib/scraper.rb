@@ -5,7 +5,7 @@ require 'open-uri'
 
 doc = Nokogiri::HTML(open("https://www.filmsite.org/bestactor2.html"))
 ##puts doc.css(".headline-26OIBN").text
-tables = doc.css('div#mainBodyWrapper table tr td:nth-child(1)')
+tables = doc.css('div.mainBodyWrapper table tr td:nth-child(1)')
 #table = tables.css("table tr td")
 puts tables.text.strip
 #table = tables.last
