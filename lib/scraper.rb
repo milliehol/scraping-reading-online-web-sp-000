@@ -7,7 +7,7 @@ doc = Nokogiri::HTML(open("https://www.filmsite.org/bestactor2.html"))
 ##puts doc.css(".headline-26OIBN").text
 tables = doc.css('div#mainBodyWrapper table')
 #table = tables.css("table tr td")
-puts table
+puts tables
 #table = tables.last
 #table.search("tr").each do |tr|
   #cells = []
